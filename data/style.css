@@ -6,25 +6,20 @@ https://www.w3schools.com/Css/tryit.asp?filename=tryresponsive_mobilefirst
 * {
     box-sizing: border-box;
 }
-.menu, .main {
-    float: left;
-}
 body {
     max-width: 70em;
     margin: 0 auto;
     line-height: 1.5;
     padding: 4ex 1em;
 }
+.menu, .header {
+    border-color: dimgrey;
+    border-bottom-style: solid;
+}
 .header {
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    border-bottom-style: solid;
-    border-color: dimgrey;
-}
-.menu {
-    border-bottom-style: solid;
-    border-color: dimgrey;
 }
 .menu ul {
     list-style-type: none;
@@ -39,6 +34,7 @@ body {
 }
 /* Defaults (With mobile phones in mind): */
 .menu, .main {
+    float: left;
     width: 100%;
 }
 @media only screen and (min-width: 60em) {
