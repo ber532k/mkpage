@@ -1,0 +1,59 @@
+/* original inspiration found at:
+https://www.w3schools.com/Css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/Css/tryit.asp?filename=tryresponsive_mobilefirst
+*/
+
+* {
+    box-sizing: border-box;
+}
+.menu, .main {
+    float: left;
+}
+body {
+    max-width: 70em;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 4ex 1em;
+}
+.header {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-color: dimgrey;
+}
+.menu {
+    border-bottom-style: solid;
+    border-color: dimgrey;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu a {
+    color: dimgrey;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: black;
+}
+/* Defaults (With mobile phones in mind): */
+.menu, .main {
+    width: 100%;
+}
+@media only screen and (min-width: 60em) {
+    /* For desktop: */
+    .menu {
+        width: 20%;
+        border-bottom-style: none;
+    }
+    .main {
+        width: 80%;
+    }
+}
+@media only print {
+    /* For printing: */
+    .menu {
+        display: none;
+    }
+}
